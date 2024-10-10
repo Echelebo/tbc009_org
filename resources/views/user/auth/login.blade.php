@@ -9,12 +9,15 @@
                         <div class="bg-white rounded-ultra shadow-lg px-8 py-5 p-md-5">
 
                             <div class="mb-4 text-center" style="color: red;">
-                                <p><strong>IMPORTANT!!! </strong><br />Please... Please first create a new account here, a
-                                    new TBC wallet will be generated for you. After login then request for recovery of TBC
-                                    balance to be able to get your TBC balance back.
+                                <p><strong>IMPORTANT!!! </strong>
+                                <p>- First create a new account, a
+                                    new wallet address will be generated for you.</p>
+                                <p>- Then submit balance recovery request to get your TBC balance back.</p>
                                 </p>
-                                <p>To create new account, click on Create your Account or goto <a
-                                        href="https://tbc009.org/register"><b>https://tbc009.org/register</b></a>
+                                <br />
+                                <p>To create new account, click <a href="https://tbc009.org/register"><b>
+                                            <font color="blue">here</font>
+                                        </b></a>
                                 </p>
                             </div>
 
