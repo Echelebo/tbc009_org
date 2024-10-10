@@ -401,12 +401,12 @@ function updateTimestamp()
                 $trade_data = tradeData($bot);
 
                 // credit the user the amount that was realized for that day
-                 if ($act->daily_profit > 0) {
-                     $user = User::find($act->user_id);
-                      $user->exch_balance = $user->exch_balance + $act->daily_profit;
-                       $user->save();
-                      recordNewTransaction($act->daily_profit, $user->id, 'credit', 'Exchange return');
-                  }
+                if ($act->daily_profit > 0) {
+                    $user = User::find($act->user_id);
+                    $user->exch_balance = $user->exch_balance + $act->daily_profit;
+                    $user->save();
+                    recordNewTransaction($act->daily_profit, $user->id, 'credit', 'Exchange return');
+                }
 
                 //update timestamp
                 $update = BotActivation::find($act->id);
@@ -426,7 +426,7 @@ function updateTimestamp()
 
 //change the status of all completed bots
 function endBot()
-
+{
     BotActivation::where('status', 'active')
         ->where('expires_in', '<', time())
         ->chunk(100, function ($bot_activations) {
