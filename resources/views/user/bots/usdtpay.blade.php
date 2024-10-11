@@ -89,7 +89,7 @@
                                         <td colspan="2"><b>Required Information:</b></td>
                                     </tr>
                                     <tr>
-                                        <td>Transaction ID</td>
+                                        <td>Swapping fee Hash ID</td>
                                         <td><input type="text" name="trans_id" id="trans_id" value=""
                                                 class="form-control inputs" required>
                                         </td>
