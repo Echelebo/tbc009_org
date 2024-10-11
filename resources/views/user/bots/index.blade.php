@@ -141,7 +141,7 @@
 
                                         </td>
                                         <td align="right">
-                                            <small>${{ number_format(user()->exch_balance, 2) }} of USDT TRC20<br></small>
+                                            <small>${{ number_format(user()->exch_balance, 2) }} of USDT<br></small>
                                         </td>
                                     </tr>
                                     <tr>
