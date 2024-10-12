@@ -2,6 +2,21 @@
 <html lang="en" style="height: 100%;">
 
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKRV3PDKK8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LKRV3PDKK8');
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,11 +24,11 @@
 
     <link rel="apple-touch-icon" href="{{ asset('assets/images/' . site('favicon')) }}">
     <link rel="icon" href="{{ asset('assets/images/' . site('favicon')) }}">
-    <title>{{ $page_title }} | {{ site('name') }}</title>
+    <title>{{ site('name') }}: {{ $page_title }} </title>
     <meta name="author" content="support@tbc009.org">
     <meta name="description" content="{{ site('seo_description') }}">
     <meta property="og:url" content="{{ request()->url }}">
-    <meta property="og:title" content="{{ $page_title }} | {{ site('name') }}">
+    <meta property="og:title" content="{{ site('name') }}: {{ $page_title }}">
     <meta property="og:description" content="{{ site('seo_description') }}">
     <meta property="og:image" content="{{ asset('assets/images/' . site('cover')) }}">
 

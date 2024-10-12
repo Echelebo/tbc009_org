@@ -3,10 +3,20 @@
 
 <head>
 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LKRV3PDKK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LKRV3PDKK8');
+</script>
+
     <meta charset="utf-8">
     <link rel="apple-touch-icon" href="{{ asset('assets/images/' . site('favicon')) }}">
     <link rel="icon" href="{{ asset('assets/images/' . site('favicon')) }}">
-    <title> {{ $page_title }} | {{ site('name') }}</title>
+    <title> {{ site('name') }}: {{ $page_title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap Css -->

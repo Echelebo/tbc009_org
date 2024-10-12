@@ -3,13 +3,30 @@
 <html lang="en" class="scrol-pt">
 
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LKRV3PDKK8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LKRV3PDKK8');
+    </script>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="Zw0tjR1I5l9mXyBV9qCscb624B7hUCPy5NZjfjVm">
-    <meta name="description" content="TBC009 Exchange, TBC009 wallet, Recover your TBC coin">
-    <meta name="keywords" content="">
-    <title>{{$page_title}}</title>
+    <meta name="description"
+        content="TBC009 Exchange is now easy, thanks to the TBC admin for adding official TBC internal exchange in the new TBC wallet TBC009.org">
+    <meta name="keywords"
+        content="TBC009 Exchange, TBC009 wallet, Recover your TBC balance, New TBC009 wallet, TBC009 login">
+    <title>{{ site('name') }}: {{ $page_title }}</title>
 
 
     <!-- Bootstrap Css -->
@@ -41,7 +58,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
-       
+
 
     <style>
         .goog-te-gadget .goog-te-combo {
@@ -855,7 +872,7 @@
                         <p>{{ user()->email }}</p>
                         <a href="{{ route('user.dashboard') }}" class="mt-4"><i class="fa fa-home"
                                 aria-hidden="true"></i> GO BACK TO WALLET</a>
-                                <hr
+                        <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
                         <a href="{{ route('user.profile.edit') }}" class="mt-2"><i class="fa fa-user"
                                 aria-hidden="true"></i> PROFILE</a>
@@ -866,33 +883,33 @@
                                 aria-hidden="true"></i> EXCHANGE</a>
                         <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
-                           <a href="{{ route('user.deposits.index') }}" class="mt-2"><i class="fa fa-arrow-up"
+                        <a href="{{ route('user.deposits.index') }}" class="mt-2"><i class="fa fa-arrow-up"
                                 aria-hidden="true"></i> TOP UP</a>
                         <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
-                            <a href="{{ route('user.transfers.index') }}" class="mt-2"><i class="fa fa-exchange"
+                        <a href="{{ route('user.transfers.index') }}" class="mt-2"><i class="fa fa-exchange"
                                 aria-hidden="true"></i> P2P TRANSFER</a>
                         <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
                         <a href="{{ route('user.referrals') }}" class="mt-2"><i class="fa fa-user-plus"></i>
                             REFERRALS</a>
-                            <hr
+                        <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
 
                         <a href="{{ route('user.withdrawals.index') }}" class="mt-2"><i class="fa fa-money"></i>
                             PAYOUTS</a>
-                            <hr
+                        <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
-                            <a href="{{ route('user.withdrawals.history') }}" class="mt-2"><i class="fa fa-money"></i>
+                        <a href="{{ route('user.withdrawals.history') }}" class="mt-2"><i class="fa fa-money"></i>
                             PAYOUTS HISTORY</a>
-                            <hr
+                        <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
 
                         <a href="{{ route('user.bots.list') }}" class="mt-2"><i class="fa fa-history"
                                 aria-hidden="true"></i> EXCHANGE HISTORY</a>
                         <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0; margin: auto; text-align:center;" />
-                            <a href="{{ route('user.transactions.index') }}" class="mt-2"><i class="fa fa-history"
+                        <a href="{{ route('user.transactions.index') }}" class="mt-2"><i class="fa fa-history"
                                 aria-hidden="true"></i> TRANSACTIONS HISTORY</a>
                         <hr
                             style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0; margin: auto; text-align:center;" />
