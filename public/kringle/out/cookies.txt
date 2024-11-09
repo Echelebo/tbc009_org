@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+kringle.cash	TRUE	/	FALSE	1999999999	PHPSESSID	88dbd71fc3a28100634beaab58c34e5a
+kringle.cash	TRUE	/	FALSE	1999999999	CSRF	hjJi3ZP9zSeTH%2FBvHe6SjRDKmJO%2Fu69al
+kringle.cash	TRUE	/	FALSE	1999999999	949648c205c	1
+

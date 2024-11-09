@@ -23,6 +23,18 @@ Route::get('/tos', [HomeController::class, 'tos'])->name('tos');
 Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
 Route::get('/faqs', [HomeController::class, 'faqs'])->name('faqs');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
+Route::get('/publicnotice', [HomeController::class, 'publicnotice'])->name('publicnotice');
+Route::get('/reasonstorecovertbc', [HomeController::class, 'reasonstorecovertbc'])->name('reasonstorecovertbc');
+Route::get('/insurance', [HomeController::class, 'insurance'])->name('insurance');
+Route::get('/howtorecovertbc', [HomeController::class, 'howtorecovertbc'])->name('howtorecovertbc');
+Route::get('/stucked', [HomeController::class, 'stucked'])->name('stucked');
+Route::get('/howtologin', [HomeController::class, 'howtologin'])->name('howtologin');
+Route::get('/thebillioncoin', [HomeController::class, 'thebillioncoin'])->name('thebillioncoin');
+Route::get('/features', [HomeController::class, 'features'])->name('features');
+Route::get('/checktbcbalance', [HomeController::class, 'checktbcbalance'])->name('checktbcbalance');
+Route::get('/tbcrate', [HomeController::class, 'tbcrate'])->name('tbcrate');
+Route::get('/safeandsecure', [HomeController::class, 'safeandsecure'])->name('safeandsecure');
+Route::get('/commontbcmistakes', [HomeController::class, 'commontbcmistakes'])->name('commontbcmistakes');
 Route::post('/contact', [HomeController::class, 'contactValidate'])->name('contact-validate');
 Route::get('/p/{slug}', [HomeController::class, 'page'])->name('page');
 
