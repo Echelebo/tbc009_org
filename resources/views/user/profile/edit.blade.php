@@ -44,13 +44,13 @@
                                     </tr>
 
                                     <!-- <tr>
-                                  <td>New Password:</td>
-                                  <td><input type="password" name="password" value="" class="form-control"></td>
-                                </tr>
-                                <tr>
-                                  <td>Retype Password:</td>
-                                  <td><input type="password" name="password2" value="" class="form-control"></td>
-                                </tr>-->
+                                      <td>New Password:</td>
+                                      <td><input type="password" name="password" value="" class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                      <td>Retype Password:</td>
+                                      <td><input type="password" name="password2" value="" class="form-control"></td>
+                                    </tr>-->
                                     <tr>
                                         <td>Your USDT TRC20 Account ID:</td>
                                         <td><input type="text" class="form-control" name="usdt_wallet" id="usdt_wallet"
@@ -80,7 +80,8 @@
 
 
                                     <tr>
-                                        <td>&nbsp;</td>
+                                        <td><a href="{{ route('user.security.edit') }}"
+                                                class="btn bg-blue-500 btn-primary ml-auto">Security</a></td>
                                         <td><input type="submit" value="Change Account data"
                                                 class="btn bg-blue-500 btn-primary ml-auto"></td>
                                     </tr>

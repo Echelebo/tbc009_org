@@ -117,10 +117,10 @@
                                             aria-hidden="true"></i> HOME</a>
                                     <hr
                                         style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
-                                    <a href="{{ route('user.updates.index') }}" class="mt-2"><i class="fa fa-bell"
-                                            aria-hidden="true"></i> UPDATES</a>
-                                    <hr
-                                        style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" />
+                                    <!--- <a href="{{ route('user.updates.index') }}" class="mt-2"><i class="fa fa-bell"
+                                                aria-hidden="true"></i> UPDATES</a>
+                                        <hr
+                                            style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;" /> -->
                                     <a href="{{ route('user.explorer.index') }}" class="mt-2"><i class="fa fa-search"></i>
                                         EXPLORER</a>
                                     <hr
@@ -166,7 +166,7 @@
                                             </p>
                                             <br />
                                             <p>
-                                                Please fill in your currency, balance request and notes. The notes section
+                                                You must fill in your currency, balance request and notes. The notes section
                                                 should be used to details where your TBC or Kirngles were acquired from. For
                                                 large request, we will base approval on the notes provided. Please provide
                                                 as much information as possible.
