@@ -20,6 +20,7 @@
                             data-copy="{{ route('user.register', ['ref' => user()->username ?? 'notset']) }}">
                             {{ route('user.register', ['ref' => user()->username ?? 'notset']) }}
                         </div>
+                        <br />
                         <p>Referral is 7% of your downlines swap amount.</p>
                     </div>
                     <br>
