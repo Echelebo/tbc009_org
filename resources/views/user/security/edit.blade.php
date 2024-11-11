@@ -16,7 +16,7 @@
 
 
                         <div class="w-full p-5 mb-5 ts-gray-2-x rounded-lg rescron-card transition-all" id="security">
-                            <h3 class="capitalize  font-extrabold "><span class="border-b-2" style="color: ##555965;">Update
+                            <h3 class="capitalize  font-extrabold "><span class="border-b-2" style="color: #555965;">Update
                                     Password</span>
                             </h3>
                             <form action="{{ route('user.profile.password') }}" class="mt-5 gen-form" id="tbctransferForm">
