@@ -37,7 +37,7 @@
                                     <td>Yes</td>
                                 </tr>
                                 <tr>
-                                    <th>Daily Return:</th>
+                                    <th>Daily Return(24 Hours):</th>
                                     <td>
                                         <?php
                                         $a = $plan_daily_profit / 100;
