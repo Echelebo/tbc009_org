@@ -1,9 +1,10 @@
 <?php
 
-//give profit for running bot testing now now
+//give profit for running bot
 
 use App\Models\BotActivation;
 use App\Models\BotHistory;
+use App\Models\User;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
@@ -38,6 +39,8 @@ function runBot()
             continue; // Try the next URL
         }
     }
+
+
 
     if ($tickerData === null) {
         // Handle the case where both URLs failed
