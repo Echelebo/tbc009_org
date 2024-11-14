@@ -398,7 +398,7 @@ function updateTimestamp()
     $today_start = $act->firsttime;
     $today_end = $act->endtime;
     }
-}
+});
     // Chunk the records
     BotActivation::where('daily_timestamp', '<', $today_start)
         ->orWhere('daily_timestamp', '>', $today_end)
