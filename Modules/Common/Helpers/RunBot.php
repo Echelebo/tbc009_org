@@ -390,10 +390,15 @@ function runBot()
 function updateTimestamp()
 {
     // Generate timestamp for the new day
+    BotActivation::where('daily_timestamp', '<', 'firsttime')
+        ->orWhere('daily_timestamp', '>', 'endtime')
+        ->where('status', 'active')
+        ->chunk(100, function ($bot_activations) {
     foreach ($bot_activations as $act) {
     $today_start = $act->firsttime;
     $today_end = $act->endtime;
     }
+}
     // Chunk the records
     BotActivation::where('daily_timestamp', '<', $today_start)
         ->orWhere('daily_timestamp', '>', $today_end)
