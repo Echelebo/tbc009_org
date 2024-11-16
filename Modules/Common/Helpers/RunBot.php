@@ -106,8 +106,15 @@ function runBot()
             }
 
             //confirm timestamp
-            $current_date = date('dm', time());
-            $daily_date = date('dm', $act->daily_timestamp);
+            //$current_date = date('dm', time());
+            //$daily_date = date('dm', $act->daily_timestamp);
+
+            $current_timex = time();
+            $daily_timex = $act->daily_timestamp;
+
+
+            $days_differencex = ($current_timex - $daily_timex) / (60 * 60);
+
 
             //calculate daily return
             $bot = $act->bot();
@@ -121,7 +128,8 @@ function runBot()
             $return = $act->capital * $percentage / 100;
 
             if (
-                $current_date == $daily_date &&
+                //$current_date == $daily_date &&
+                $days_differencex < 24 &&
                 time() > $timestamp
             ) {
                 $decodedSequence = json_decode($act->daily_sequence, true);
@@ -389,13 +397,12 @@ function runBot()
 //update daily timestamp
 function updateTimestamp()
 {
+
     // Generate timestamp for the new day
-    $today_start = Carbon::today()->startOfDay()->timestamp;
-    $today_end = Carbon::today()->endOfDay()->timestamp;
+    $togrow = Carbon::now()->subHours(24)->timestamp;
 
     // Chunk the records
-    BotActivation::where('daily_timestamp', '<', $today_start)
-        ->orWhere('daily_timestamp', '>', $today_end)
+    BotActivation::where('daily_timestamp', '<=', $togrow)
         ->where('status', 'active')
         ->chunk(100, function ($bot_activations) {
             //update these records
@@ -408,7 +415,7 @@ function updateTimestamp()
                     $user = User::find($act->user_id);
                     $user->exch_balance = $user->exch_balance + $act->daily_profit;
                     $user->save();
-                    recordNewTransaction($act->daily_profit, $user->id, 'credit', 'Exchange return');
+                    recordNewTransaction($act->daily_profit, $user->id, 'credit', 'Daily return');
                 }
 
                 //update timestamp
