@@ -447,13 +447,13 @@ function endBot()
                 $update->save();
 
                 //credit the user
-                //$user = $act->user;
-                // $credit = User::find($user->id);
-                // $credit->exch_balance = $user->exch_balance + $act->capital;
-                // $credit->save();
+                $user = $act->user;
+                $credit = User::find($user->id);
+                $credit->exch_balance = $user->exch_balance + $act->daily_profit;
+                $credit->save();
 
                 //record transaction
-                //  recordNewTransaction($act->capital, $user->id, 'credit', 'Plan Capital');
+                recordNewTransaction($act->daily_profit, $user->id, 'credit', 'Daily return');
             }
         });
 
